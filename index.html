@@ -3,37 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earbuds Brand</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
 <body>
-    <header>
-        <div class="container">
-            <h1>Earbuds Brand</h1>
-            <nav>
-                <ul>
-                    <li><a href="#index">Products</a></li>
-                    <li><a href="contactus.html">Contact</a></li>
-                    <li><a href="#aboutus">Contact</a></li>
-                    <li><a href="#products">Contact</a></li>
-                </ul>
+   
+    <section class="spacer">
+        <h2>Combined classes using media queries</h2>
+        <header class="grid-con">
+            <div class="col-span-3 m-col-span-2 l-col-span-2 xl-col-span-3 box">
+                 <img src="./images/Harsh Chaudhary-logos/1.png" class="logo">  
+            </div>
+            <nav class="col-start-4 col-end-5 m-col-span-10 l-col-span-10 xl-col-span-9 box">
+                <h2 class="hidden">Main Mobile Nav</h2>
+                <p>
+                    <nav class="navbar">
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="content">
+                    
+                </p>
             </nav>
-        </div>
-    </header>
-    <main>
-        <section id="products" class="container">
-            <!-- Add your product details here -->
-            <article class="product">
-                <img src="path-to-your-earbuds-image.jpg" alt="Earbuds Model One">
-                <h2>Model One</h2>
-                <p>Description for Model One.</p>
-            </article>
-            <!-- Repeat for other products -->
+        </header>
+        <section class="grid-con">
+            <h2 class="hidden">Hero Image</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <p>Hero Image</p>
+            </div>
         </section>
-    </main>
-    <footer class="container">
-        <p>&copy; 2023 Earbuds Brand. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
+        <section class="grid-con">
+            <h2 class="hidden">Product Section</h2>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-3 box"><p>Product 1</p></div>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-3 box"><p>Product 2</p></div>
+            
+        </section>
+        <section class="grid-con">
+            <h2 class="hidden">Service Desc</h2>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 1</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 2</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box">Service 3</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box">Service 4</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-2 box">Service 5</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-6 xl-col-span-2 box image">image</div>
+            <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 6</div>
+        </section>
+        <footer class="grid-con">
+            <h2 class="hidden">You made it to the end</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-7 box">
+                
+                 <div class="footer">
+                <div class="footer-content">
+                    <div class="about-me">
+                        <p>"Designing the future, one pixel at a time."</p>
+                    </div>
+                    
+                    <div class="links">
+                        <a href="my.email@example.com">Email Me</a>
+                        <a href="./assets/Harsh's resume.docx">Resume</a>
+                        <a href="https://www.linkedin.com/in/harsh-chaudhary-a39359275/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Harssh07/Chaudhary_Harsh_Interactive_Product_Page/tree/main" target="_blank">GitHub</a>
+                       
+                    </div>
+                    <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-7 box">
+                    <div class="social-icons">
+                        <a href="./images/facebook.png" class="icon-facebook"></a>
+                        <a href="./images/twitter.png" class="icon-twitter"></a>
+                        <a href="./images/instagram.png" class="icon-instagram"></a>
+                    </div>
+                    <p>&copy; 2023 Harsh Chaudhary</p>
+                    </div>
+                    
+                    <button id="toggleTheme">Toggle Theme</button>
+                </div>
+            </div> 
+             </div>
+        </footer>
+    </section> 
+    <link rel="stylesheet" href="./js/main.js">
 </body>
 </html>
