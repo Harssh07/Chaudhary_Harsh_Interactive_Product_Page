@@ -27,8 +27,8 @@
   }
   
   .box {
-     background-color: gray;
-     color: rgb(27, 27, 27);
+     background-color: none;
+     color:white;
      border-radius: 5px;
      padding: 20px;
      text-align: center;
