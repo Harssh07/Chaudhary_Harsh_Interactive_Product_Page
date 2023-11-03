@@ -186,3 +186,36 @@ nav {
 #toggleTheme:hover {
     background-color: #555;
 }
+
+
+
+
+.nav-links {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+ .nav-links::after{
+    content: ;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+ .nav-links::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+ .nav-links a:hover {
+    color: #555;
+  }
+  
