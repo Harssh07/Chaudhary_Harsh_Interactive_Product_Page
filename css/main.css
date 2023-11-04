@@ -241,20 +241,20 @@ nav {
 
 #earbud-info {
     padding: 20px;
-    margin: 20px;
-    /* border: 1px solid #ccc;
-    border-radius: 5px; */
+    /* margin-bottom: 20px; */
     font-size: 22px;
+    margin-top: 30px;
+    
   }
 
 i {
-    margin-top: 45px;
-    margin-bottom: 45px;
+    padding : 5px;
+    margin-bottom: 55px;
   }
 
 h2 {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
 p {
@@ -270,10 +270,17 @@ hr {
 
 
 #images {
-    /* height: 20%;
-    width: 20%; */
+    
     padding-left: 10px;
-    padding-right: 20px;
+    margin-right: 50px;
+}
+
+#Go-air-pop {
+
+    /* height: min-content;
+    width: min-content; */
+  padding-bottom: 20px;
+  padding-top: 20px;  
 }
 
   
