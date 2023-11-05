@@ -334,9 +334,11 @@ hr {
 
 
 
-      
+.about {
+    display: flex;
+}     
      
-.about-us-button {
+.aboutUs-button {
         display: inline-block;
         padding: 15px 30px;
         background-color: #007bff;
@@ -349,16 +351,16 @@ hr {
         transition: background-color 0.3s ease-in-out; 
     }
     
-.about-us-button:hover {
+.aboutUs-button:hover {
         background-color: #0056b3; 
     }
     
-#our-info {
+.our-info {
         padding: 20px;
         /* margin-bottom: 20px; */
         font-size: 22px;
         margin-top: 30px;
-        
+        display: block;
       }
 
 #team-novo {
