@@ -17,3 +17,11 @@ if (bodyElement.classList.contains('light-theme')) {
 });
 
 
+function changeImage(model, color) {
+    const imagePath = `images/GOaAirPopRoseCover.webp`; 
+    const earbudImage = document.getElementById('Model-1');
+    earbudImage.src = images/GOAirPopRoseCover.webp;
+  }
+  
+
+
