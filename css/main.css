@@ -269,20 +269,20 @@ hr {
 
 
 
-/* #images {
+#images {
     
     padding-left: 10px;
     margin-right: 50px;
-} */
+}
 
 
 
-.model-1 {
+/* .model-1 {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   
   .color-palette {
     display: flex;
@@ -304,11 +304,38 @@ hr {
   }
   
 
-#black-pop:hover {
+#model-1:hover {
     
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+        transform: scale(1.01);
         transition: 0.3s;
       }
+
+
+#model-2:hover {
+    
+  
+        transform: scale(1.01);
+        transition: 0.3s;
+      }
+
+#model-3:hover {
+    
+  
+        transform: scale(1.01);
+        transition: 0.3s;
+      }
+
+
+#model-4:hover {
+    
+  
+        transform: scale(1.01);
+        transition: 0.3s;
+      }
+
+
+      
       
       
 
