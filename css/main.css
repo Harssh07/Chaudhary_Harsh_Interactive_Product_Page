@@ -337,7 +337,38 @@ hr {
 
 
       
+/* #our-info {
+        padding: 20px;
+        font-size: 22px;
+        margin-top: 30px;
+        
+      } */
       
-      
+      .about-us-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out; 
+    }
+    
+    .about-us-button:hover {
+        background-color: #0056b3; 
+    }
+    
+   
+    
+    #our-info {
+        padding: 20px;
+        font-size: 22px;
+        margin-top: 30px;
+        
+      }
+    
 
   
