@@ -257,6 +257,8 @@ h2 {
     margin-bottom: 30px;
   }
 
+  
+
 p {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -269,24 +271,24 @@ hr {
   }
 
 
-
+/* 
 #images {
     
     padding-left: 10px;
     margin-right: 50px;
-}
+} */
 
 
 
 
   
-  .color-palette {
+.color-palette {
     display: flex;
     margin: 10px 0;
     align-items: center;
   }
   
-  .color-option {
+.color-option {
     width: 30px;
     height: 30px;
     margin: 0 5px;
@@ -295,7 +297,7 @@ hr {
     border-radius: 50%; 
   }
   
-  .color-option:hover {
+.color-option:hover {
     border: 2px solid #000;
   }
   
@@ -363,5 +365,48 @@ hr {
     height: auto;
     width: 600px;
 }      
+
+
+.work {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+.work img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.service {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .service-bar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    
+    
+  }
+  
+  .service-bar h2 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .work:hover .service-bar {
+    background-color: #0500a5; 
+    color: rgb(186, 196, 0)55, 255, 255;
+  } 
+  
+  
 
   
