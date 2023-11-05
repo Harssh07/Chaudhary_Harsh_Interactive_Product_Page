@@ -278,12 +278,7 @@ hr {
 
 
 
-/* .model-1 {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+
   
   .color-palette {
     display: flex;
@@ -336,15 +331,10 @@ hr {
       }
 
 
+
       
-/* #our-info {
-        padding: 20px;
-        font-size: 22px;
-        margin-top: 30px;
-        
-      } */
-      
-      .about-us-button {
+     
+.about-us-button {
         display: inline-block;
         padding: 15px 30px;
         background-color: #007bff;
@@ -357,18 +347,21 @@ hr {
         transition: background-color 0.3s ease-in-out; 
     }
     
-    .about-us-button:hover {
+.about-us-button:hover {
         background-color: #0056b3; 
     }
     
-   
-    
-    #our-info {
+#our-info {
         padding: 20px;
+        /* margin-bottom: 20px; */
         font-size: 22px;
         margin-top: 30px;
         
       }
-    
+
+#team-novo {
+    height: auto;
+    width: 600px;
+}      
 
   
