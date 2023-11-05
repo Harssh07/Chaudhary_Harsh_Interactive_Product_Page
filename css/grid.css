@@ -53,7 +53,7 @@
   .nav-links {
       display: none;
       flex-direction: column;
-      background-color: #333;
+      /* background-color: #333; */
       position: absolute;
       top: 50px;
       right: 0;
