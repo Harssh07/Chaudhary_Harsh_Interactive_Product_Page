@@ -528,7 +528,15 @@ hr {
   }
   
 
+#spacer {
+    
+    color: aliceblue;
+    text-align: center;
+}
 
+#list {
+    text-align: center;
+}
 
 
 
