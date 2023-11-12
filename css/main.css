@@ -87,7 +87,7 @@ a{
 }
 
 .navbar .hamburger-menu {
-    display: none;
+    display: auto;
     flex-direction: column;
     cursor: pointer;
 }

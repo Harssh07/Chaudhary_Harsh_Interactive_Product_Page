@@ -22,6 +22,8 @@ function changeImage(Goairpop, color) {
     const earbudImage = document.getElementById('model-1');
     earbudImage.src = images/GOAirPopRoseCover.webp;
   }
+
+  
   
 
 
