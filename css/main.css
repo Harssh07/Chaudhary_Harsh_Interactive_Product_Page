@@ -1,121 +1,40 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
 
 }
 
 body{
-    /* background: #080808; */
-    margin: 0;
-    padding: 0;
-    font-family: 'Cinzel', serif;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('../images/earbud-x-ray.jpg'); 
-    
-    background-size: cover;
-}
-
-#header {
-    
-    
-    background-position: auto;
-    background-size: cover;
-    
-    text-align: center;
-}
-
-#character-nav {
-    text-align: center;
-    
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color:#000;
+  text-decoration: #ccc;
+  overflow-x: hidden;
 }
 
 
 .container {
-   padding: 10px 10%; 
-    
+ padding: 10px 10%; 
+  
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap ;
-}
 
-.logo{
-    width: 140px;
-
-}
-
-nav ul li {
-    display:inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-   
-
-   
-    
-
-li{
-    list-style: none;
-    }
 
 a{
-    color: white;
-    text-decoration: none;
-    }
+  color: white;
+  text-decoration: none;
+  }
 
 
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: none;
-    padding: 10px 20px;
-    /* color: white; */
-}
-
-.navbar .hamburger-menu {
-    display: auto;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.navbar .hamburger-menu .bar {
-    width: 25px;
-    height: 3px;
-    /* background-color: white; */
-    margin: 3px 0;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-}
 
 .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 
@@ -123,418 +42,471 @@ a{
 
 
 .footer-content {
-    min-height: 30vh;
-    padding: 20px;
+  min-height: 30vh;
+  padding: 20px;
 }
 
 .footer {
-    width: 100%;
-    padding: 20px 0;
-    /* background-color: orange; */
-    color: white;
-    position: relative;
-    bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .about-me {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 20px;
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
 }
 
-.links {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-width: 300px;
+
+
+#main-nav button {
+  width: 30px;
+  height: 30px;
+  background: url(../images/burger.svg) no-repeat center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+  border: 0;
+  cursor: pointer;
 }
 
-.links a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
+#main-nav button.expanded {
+  transform: rotate(90deg);
 }
 
-.links a:hover {
-    text-decoration: underline;
+#burger-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
 }
 
-#toggleTheme {
-    cursor: pointer;
-    padding: 5px 15px;
+#burger-con.slide-toggle {
+  display: block;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 5px 0 10px 0;
+  text-align: center;
+  color: #E6E2C3;
+}
+
+#main-nav ul li a:hover {
+  color: #2d8c91;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+  margin-bottom: 10px;
+}
+
+#logo {
+  max-width: 90px;
+  margin-bottom: 20px;
+  margin-left: 130px;
+  margin-top: -30px;
+}
+
+#sticky-nav-con {
+  position: sticky;
+  background-color: #2B2730;
+  top: 0px;
+  border-bottom: solid 1px #E6E2C3;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  #button {
+    display: none;
+  }
+  #logo {
+    margin-top: 60px;
+    order: -1;
+    margin-left: 130px;
+  }
+  #burger-con {
+    display: block;
+    font-size: 13px;
+  }
+  #burger-con ul li, #burger-con ul li:first-child {
     border: none;
-    /* background-color: #444; */
-    color: rgb(255, 221, 0);
-    border-radius: 5px;
-    outline: none;
-    transition: background-color 0.3s ease ;
-    margin-top: 10px;
-}
-
-#toggleTheme:hover {
-    background-color: #555;
-}
-
-
-
-
-.nav-links {
-    position: relative;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
+    display: inline;
   }
-  
- .nav-links::after{
+  #main-nav ul li a {
+    display: grid;
+  }
+  #burger-con ul li {
+    margin-right: 80px;
     
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 140, 0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
   }
-  
- .nav-links::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  #burger-con ul li:last-child {
+    margin-right: 0;
   }
-  
- .nav-links a:hover {
-    color: #ff0000;
+  #main-nav {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-left: 1px solid #E6E2C3;
+    padding-left: 50px;
   }
-  
-
-   
-
+}
 
 .shop-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out; 
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; 
 }
 
 .shop-button:hover {
-    background-color: #0056b3; 
+  background-color: #0056b3; 
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    height: 100vh; 
-  }
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+}
 
 #earbud-info {
-    padding: 20px;
-    font-size: 22px;
-    margin-top: 30px;
-    
-  }
+  padding: 20px;
+  font-size: 22px;
+  margin-top: 30px;
+  
+}
 
 i {
-    padding : 5px;
-    margin-bottom: 55px;
-  }
+  padding : 5px;
+  margin-bottom: 55px;
+}
 
 h2 {
-    margin-top: 25px;
-    margin-bottom: 30px;
-  }
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
 
-  
+
 
 p {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
-  }
+}
 
 hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-
-
-
-
-
-  
 .color-palette {
-    display: flex;
-    margin: 10px 0;
-    align-items: center;
-  }
-  
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
 .color-option {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-    cursor: pointer;
-    border: 2px solid #fff;
-    border-radius: 50%; 
-  }
-  
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50%; 
+}
+
 .color-option:hover {
-    border: 2px solid #000;
-  }
-  
+  border: 2px solid #000;
+}
+
 
 #model-1:hover {
-    
   
-        transform: scale(1.01);
-        transition: 0.2s;
-      }
+
+      transform: scale(1.01);
+      transition: 0.2s;
+    }
 
 
 #model-2:hover {
-    
   
-        transform: scale(1.01);
-        transition: 0.3s;
-      }
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
 
 #model-3:hover {
-    
   
-        transform: scale(1.01);
-        transition: 0.3s;
-      }
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
 
 
 #model-4:hover {
-    
   
-        transform: scale(1.01);
-        transition: 0.3s;
-      }
+
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
 
 
 
 .about {
-    display: flex;
+  display: flex;
 }     
-     
+   
 .aboutUs-button {
-        display: inline-block;
-        padding: 15px 30px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out; 
-    }
-    
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out; 
+  }
+  
 .aboutUs-button:hover {
-        background-color: #0056b3; 
-    }
-    
+      background-color: #0056b3; 
+  }
+  
 .our-info {
-        padding: 20px;
-        /* margin-bottom: 20px; */
-        font-size: 22px;
-        margin-top: 30px;
-        display: block;
-      }
+      padding: 20px;
+      /* margin-bottom: 20px; */
+      font-size: 22px;
+      margin-top: 30px;
+      display: block;
+    }
 
 #team-novo {
-    height: auto;
-    width: 600px;
+  height: auto;
+  width: 600px;
 }      
 
 
 .work {
-    position: relative;
-    display: inline-block;
-    margin: 20px;
-    overflow: hidden;
-  }
-  
-.work img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-.service {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .service-bar {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    
-    
-  }
-  
-  .service-bar h2 {
-    margin: 0;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-  }
-
-  .work:hover .service-bar {
-    background-color: #0500a5; 
-    color: rgb(186, 196, 0)55, 255, 255;
-  } 
-
-  #best-sellers:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-
-  #focus:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-  
-  #gaming:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-  
-  #kids:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-
-  #work:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-
-  #fitness:hover {
-    
-  
-    transform: scale(1.02);
-    transition: 0.3s;
-  }
-
-  
-
-#search-bar {
-    width: 200px;
-    height: 30px;
-    border: 2px solid orange;
-    margin-left: 70%;
-    padding-left: 55px;
-    border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
 }
+
+.work img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-bar {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  
+  
+}
+
+.service-bar h2 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.work:hover .service-bar {
+  background-color: #0500a5; 
+  color: rgb(186, 196, 0)55, 255, 255;
+} 
+
+.fitness :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.Work :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.kids :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.gaming :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.focus :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+.best-sellers :hover{
+  opacity: 0.5; color: rgb(215, 16, 166); 
+}
+
+
+ 
+
+
+
 
 /* contact */
 .contact-hero{
-    background-image: url(../images/contact-img.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 815px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  background-image: url(../images/contact-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 815px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .contact-hero h2 {
-    color: white;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    
-  }
+.contact-hero h2 {
+  color: white;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
   
-  .contact-form {
-    width: auto;
-    margin: 0 auto;
-    /* align-content: center;
-    align-items: center; */
-  }
+}
+
+.contact-form {
+  width: auto;
+  margin: 0 auto;
   
-  .contact-form h2 {
-    text-align: center;
-  }
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: auto;
+  align-content: center;
+  align-items: center;
   
-  .form-group {
-    margin-bottom: 20px;
-    width: auto;
-    align-content: center;
-    align-items: center;
-    
-    
-  }
   
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #04da0f;
-  }
-  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #04da0f;
+}
+
 
 #spacer {
-    
-    color: aliceblue;
-    text-align: center;
+  
+  color: aliceblue;
+  text-align: center;
+}
+
+/* explode-view */
+
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
+/* x-ray slider */
+#outerShell {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 90vh;
+  }
+  .slideImage {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    height: 90vh;
+  }
+  .image-right {
+    background: url(../images/Main_xray\ .jpg) no-repeat;
+    background-size: cover;
+  }
+  .image-left {
+    background: url(../images/Colored_earbuds.jpg) no-repeat;
+    width: 50%; /*start the image at the halfway point*/
+    background-size: cover;
+  }
+  .image-drag {
+    background-color: #666;
+    left: 50%; /*match up with image left*/
+    width: 4px; /*orig 49*/
+    cursor: pointer;
+  }
 }
 
 
 
-
-  
